@@ -1,1 +1,1 @@
-Flexbox Project, code along from Wes Bos.
+Learning Flexbox, code along project w/ Wes Bos.
