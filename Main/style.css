@@ -1,14 +1,40 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+html {
+  box-sizing: border-box;
 }
 
-.box1 {
-  flex: 10 5 450px;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.box2 {
-  flex: 1 1 360px;
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-image: linear-gradient(to right, #ec6f66, #f3a183);
 }
+
+a {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50;
+}
+
+
+
+/*FLEXBOX*/
