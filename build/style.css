@@ -14,13 +14,13 @@
 }
 
 .box1 {
-  -webkit-box-flex:10;
-      -ms-flex:10 5 450px;
-          flex:10 5 450px;
+  -webkit-box-flex: 10;
+      -ms-flex: 10 5 450px;
+          flex: 10 5 450px;
 }
 
 .box2 {
-  -webkit-box-flex:1;
-      -ms-flex:1 1 360px;
-          flex:1 1 360px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 360px;
+          flex: 1 1 360px;
 }

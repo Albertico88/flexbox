@@ -4,10 +4,10 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('style', function() {
   gulp.src('main/style.css')
     .pipe(autoprefixer())
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build'));
 });
 
 
-gulp.task('watch', function() {
+gulp.task('default', function() {
   gulp.watch('main/style.css', ['style']);
 });
