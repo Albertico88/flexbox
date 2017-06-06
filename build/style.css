@@ -13,37 +13,66 @@ body {
   margin: 0;
   background-image: -webkit-gradient(linear, left top, right top, from(#ec6f66), to(#f3a183));
   background-image: linear-gradient(to right, #ec6f66, #f3a183);
+  min-width: 400px;
 }
 
 a {
   color:white;
-  font-weight: 100;
+  font-weight: 200;
   letter-spacing: 2px;
   text-decoration: none;
-  background:rgba(0,0,0,0.2);
-  padding:20px 5px;
+  background: rgba(0,0,0,0.2);
+  padding: 20px 5px;
   display: inline-block;
   width: 100%;
   text-align: center;
-  -webkit-transition:all 0.5s;
-  transition:all 0.5s;
+  -webkit-transition:all 0.2s;
+  transition:all 0.2s;
 }
 
 a:hover {
-  background:rgba(0,0,0,0.3);
+  background: #d0493f;
+}
+
+/* Hide Menu Icon by default */
+.toggleNav {
+  display: none;
 }
 
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  padding:50px;
+  padding: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 10px;
+  border: 0;
+  border-radius: .05px;
+}
+
+section, footer {
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  color: white;
+  font-weight: 200;
+  background:rgba(0,0,0,0.2);
 }
 
 
-/*FLEXBOX*/
+/* --- FLEXBOX --- */
 /* Flex Container */
 .flex-nav ul {
-  border: 1px solid black;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -52,7 +81,7 @@ a:hover {
   display: flex;
 }
 
-/*Flex Items*/
+/* Flex Items */
 .flex-nav li {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -66,6 +95,9 @@ a:hover {
 }
 
 
+
+
+/* RESPONSIVE */
 @media all and (max-width:900px) {
 
   .flex-nav ul {
@@ -88,11 +120,74 @@ a:hover {
 
 }
 
+
+/* Mobile */
 @media all and (max-width:500px) {
 
   .flex-nav li {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+/* Flex Item */
+  .wrapper > * {
+    -webkit-box-ordinal-group: 10000;
+        -ms-flex-order: 9999;
+            order: 9999;
+  }
+
+  .flex-nav {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .toggleNav {
+    display: block;
+  }
+
+  .flex-nav ul {
+    display: none;
+  }
+
+  .flex-nav ul.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .top {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .details {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .hero {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4
+  }
+
+  .signup {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
 
 }
