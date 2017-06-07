@@ -50,13 +50,23 @@ img, .hero {
 }
 
 img, .javascript {
-  width: 10%;
+  width: 59%;
 }
 
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+
+.skills-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+
+}
+
 
 input {
   padding: 10px;
@@ -70,7 +80,7 @@ section, footer {
   margin: 20px 0;
   color: white;
   font-weight: 200;
-  background:rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.2);
 }
 
 
