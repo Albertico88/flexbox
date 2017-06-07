@@ -41,8 +41,12 @@ a:hover {
   padding: 50px;
 }
 
-img {
+img, .hero {
   width: 100%;
+}
+
+img, .javascript {
+  width: 10%;
 }
 
 .wrapper {
