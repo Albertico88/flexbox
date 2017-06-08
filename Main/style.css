@@ -42,11 +42,6 @@ a:hover {
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
-}
-
-.wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
   padding: 50px;
 }
 
@@ -81,14 +76,14 @@ a:hover {
 .skills-list ul {
   display: flex;
   list-style: none;
-  padding: 0;
+  padding-left: 2px;
 }
 
 /* 1st Flex Item */
 .skills-list li {
   flex: 1;
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .skills-list img {

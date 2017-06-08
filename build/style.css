@@ -46,11 +46,6 @@ a:hover {
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
-}
-
-.wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
   padding: 50px;
 }
 
@@ -93,7 +88,7 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  padding: 0;
+  padding-left: 2px;
 }
 
 /* 1st Flex Item */
@@ -101,12 +96,12 @@ a:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .skills-list img {
