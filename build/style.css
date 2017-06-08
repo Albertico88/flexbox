@@ -39,73 +39,20 @@ a:hover {
   display: none;
 }
 
+.hero {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px;
 }
-
-img, .hero {
-  width: 100%;
-}
-
-
-.wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-
-
-
-/* Flex Container */
-.skills-list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  /*align-items: center;*/
-}
-
-/* 1st Flex Item */
-.skills-list li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills-list img {
-  display: block;
-  width: 100%;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-
-
-
-
-input {
-  padding: 10px;
-  border: 0;
-  border-radius: .05px;
-}
-
-section, footer {
-  text-align: center;
-  padding: 20px;
-  margin: 20px 0;
-  color: white;
-  font-weight: 200;
-  background: rgba(0,0,0,0.2);
-}
-
 
 /* --- FLEXBOX --- */
 /* Flex Container */
@@ -132,6 +79,64 @@ section, footer {
 }
 
 
+/* Icons */
+
+.icons img {
+  max-width: 146px;
+  max-height: 146px;
+}
+
+
+/* Flex Container */
+.skills-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+/* 1st Flex Item */
+.skills-list li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-list img {
+  display: block;
+  width: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+
+
+/*  Email */
+input {
+  padding: 10px;
+  border: 0;
+  border-radius: .05px;
+}
+
+section, footer {
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  color: white;
+  font-weight: 200;
+  background: rgba(0,0,0,0.2);
+}
+
 
 
 /* RESPONSIVE */
@@ -154,6 +159,7 @@ section, footer {
         -ms-flex: 1 1 25%;
             flex: 1 1 25%;
   }
+
 
 }
 

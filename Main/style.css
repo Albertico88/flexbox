@@ -35,64 +35,20 @@ a:hover {
   display: none;
 }
 
+.hero {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px;
 }
-
-img, .hero {
-  width: 100%;
-}
-
-
-.wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-
-
-
-/* Flex Container */
-.skills-list ul {
-  display: flex;
-  list-style: none;
-  /*align-items: center;*/
-}
-
-/* 1st Flex Item */
-.skills-list li {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-.skills-list img {
-  display: block;
-  width: 100%;
-  flex-basis: 100%;
-}
-
-
-
-
-
-input {
-  padding: 10px;
-  border: 0;
-  border-radius: .05px;
-}
-
-section, footer {
-  text-align: center;
-  padding: 20px;
-  margin: 20px 0;
-  color: white;
-  font-weight: 200;
-  background: rgba(0,0,0,0.2);
-}
-
 
 /* --- FLEXBOX --- */
 /* Flex Container */
@@ -113,6 +69,53 @@ section, footer {
 }
 
 
+/* Icons */
+
+.icons img {
+  max-width: 146px;
+  max-height: 146px;
+}
+
+
+/* Flex Container */
+.skills-list ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+/* 1st Flex Item */
+.skills-list li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.skills-list img {
+  display: block;
+  width: 100%;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+
+
+/*  Email */
+input {
+  padding: 10px;
+  border: 0;
+  border-radius: .05px;
+}
+
+section, footer {
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  color: white;
+  font-weight: 200;
+  background: rgba(0,0,0,0.2);
+}
+
 
 
 /* RESPONSIVE */
@@ -130,6 +133,7 @@ section, footer {
   .flex-nav .social {
     flex: 1 1 25%;
   }
+
 
 }
 
