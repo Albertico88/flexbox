@@ -134,8 +134,9 @@ section, footer {
 
 
 
+
 /* RESPONSIVE */
-@media all and (max-width:900px) {
+@media all and (max-width:1000px) {
 
   .flex-nav ul {
     -ms-flex-wrap: wrap;
@@ -159,7 +160,7 @@ section, footer {
 }
 
 
-/* Mobile */
+
 @media all and (max-width:500px) {
 
   .flex-nav li {
@@ -217,12 +218,25 @@ section, footer {
   }
 
   .hero {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4
+    display: none;
   }
 
   .signup {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+
+}
+
+@media all and (max-width: 600px) {
+
+  .skills-list ul {
+    display: inline-grid;
+  }
+
+  .icons {
+    display: block;
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;

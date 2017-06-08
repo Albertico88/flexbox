@@ -113,8 +113,9 @@ section, footer {
 
 
 
+
 /* RESPONSIVE */
-@media all and (max-width:900px) {
+@media all and (max-width:1000px) {
 
   .flex-nav ul {
     flex-wrap: wrap;
@@ -133,7 +134,7 @@ section, footer {
 }
 
 
-/* Mobile */
+
 @media all and (max-width:500px) {
 
   .flex-nav li {
@@ -175,10 +176,23 @@ section, footer {
   }
 
   .hero {
-    order: 4
+    display: none;
   }
 
   .signup {
+    order: 4;
+  }
+
+}
+
+@media all and (max-width: 600px) {
+
+  .skills-list ul {
+    display: inline-grid;
+  }
+
+  .icons {
+    display: block;
     order: 5;
   }
 
